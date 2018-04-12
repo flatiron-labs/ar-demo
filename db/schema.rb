@@ -28,6 +28,8 @@ ActiveRecord::Schema.define(version: 20180405145920) do
   end
 
   create_table "songs", force: :cascade do |t|
+    t.string "title"
+    t.integer "rating"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
